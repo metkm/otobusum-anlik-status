@@ -49,7 +49,7 @@ impl EventHandler for Handler {
                 }
 
                 println!("made requests. Sleeping");
-                tokio::time::sleep(tokio::time::Duration::from_secs(14400))
+                tokio::time::sleep(tokio::time::Duration::from_secs(36000)) // 10 hours
                     .await;
             }
         });
